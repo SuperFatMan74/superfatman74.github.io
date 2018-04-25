@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style> 
+
+    <body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #FF0000;
+}
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+h1 {
+   text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  text-align: center;
+}
+
+a {
+ color: black;
+}
+
+body {
+     background-color: blue;
+}
+
+</style>
+</head>
+<body>
+
+<h1>SuperFatMan74</h1>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'Games')">Games</button>
+  <button class="tablinks" onclick="openCity(event, 'HTP')">HTP</button>
+  <button class="tablinks" onclick="openCity(event, 'MOC')">MOC</button>
+  <button class="tablinks" onclick="openCity(event, 'Cal')">Cal</button>
+</div>
+
+<div id="Home" class="tabcontent">
+  <h2>You can see the games i am making and codings in this site.</h2>
+</div>
+
+<div id="Games" class="tabcontent">
+  <h3>Games</h3>
+  <a href="superfatman74.github.io/RS"><p style="text-align:center">Retro Snake</p></a>
+ <a href="superfatman74.github.io/RBR"><p style="text-align:center">Retro Brick</p></a>
+  <a href="superfatman74.github.io/RBL"><p style="text-align:center">Retro Block</p></a>
+</div>
+
+<div id="HTP" class="tabcontent">
+  <h1>How To Play!</h1>
+   <h2>Retro Snake</h2>
+  <h3>Use the arrows to turn and pick the red cubes!</h3>
+  <h2>Retro Brick</h2>
+  <h3>Use the right and left arrow to move or the mouse. Destroy the bricks!</h3>
+  <h2>Retro Brick</h2>
+  <h3>Click on ACCELERATE button to fly!</h3>
+</div>
+
+<div id="MOC" class="tabcontent">
+  <h3>My Other Codings</h3>
+  <a href="superfatman74.github.io/RC"><p style="text-align:center">Super Calculator</p></a>
+  
+</div>
+
+<div id="Cal" class="tabcontent">
+    <h3>Calendars</h3>
+    <h2>2018</h2>
+    <a href="superfatman74.github.io/A"><p style="text-align:center">April</p></a>
+    <p><-----></p>
+    <a href="superfatman74.github.io/M"><p style="text-align:center">May</p></a>
+    <p><-----></p>
+<a href="superfatman74.github.io/Jun"><p style="text-align:center">Juni</p></a>
+  
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+     
+</body>
+</html> 
